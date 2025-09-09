@@ -50,3 +50,6 @@ This site is fully responsive and optimized for all devices.
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/portfolio.git
+
+## 📝 License & Attribution
+This portfolio was built using a free Bootstrap 5 template from ThemeWagon, customized for personal use.

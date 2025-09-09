@@ -30,6 +30,10 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- font awsome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -432,12 +436,10 @@
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
-    // Initialize EmailJS
     (function() {
-        emailjs.init("b88wfYdit0Z-DswXh"); // Your Public Key
+        emailjs.init("b88wfYdit0Z-DswXh"); 
     })();
 
-    // Handle Form Submission
     const form = document.getElementById("contact-form");
     const statusDiv = document.getElementById("form-status");
     const sendBtn = document.getElementById("send-btn");
@@ -445,27 +447,22 @@
     form.addEventListener("submit", function(event) {
         event.preventDefault();
 
-        // Show loading state
         sendBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status"></span> Sending...';
         sendBtn.disabled = true;
 
-        // Send form via EmailJS
         emailjs.sendForm("service_khlt3ew", "template_jtjxysh", this)
         .then(function() {
-            // Success message
             statusDiv.innerHTML = `
             <div class="alert alert-success mt-3">✅ Message sent successfully!</div>
             `;
             form.reset();
         }, function(error) {
-            // Error message
             statusDiv.innerHTML = `
             <div class="alert alert-danger mt-3">❌ Failed to send message. Please try again.</div>
             `;
             console.error("EmailJS Error:", error);
         })
         .finally(function() {
-            // Reset button
             sendBtn.innerHTML = "Send Message";
             sendBtn.disabled = false;
         });
