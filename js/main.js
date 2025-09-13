@@ -23,7 +23,7 @@
             
             $('html, body').animate({
                 scrollTop: $(this.hash).offset().top - 45
-            }, 1500, 'easeInOutExpo');
+            }, 500, 'easeInOutExpo');
             
             if ($(this).parents('.navbar-nav').length) {
                 $('.navbar-nav .active').removeClass('active');
@@ -60,19 +60,6 @@
     }
 
 
-    // Modal Video
-    var $videoSrc;
-    $('.btn-play').click(function () {
-        $videoSrc = $(this).data("src");
-    });
-    console.log($videoSrc);
-    $('#videoModal').on('shown.bs.modal', function (e) {
-        $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-    })
-    $('#videoModal').on('hide.bs.modal', function (e) {
-        $("#video").attr('src', $videoSrc);
-    })
-
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
@@ -101,16 +88,16 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
 
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navCollapse = document.querySelector('.navbar-collapse');
 
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        items: 1,
-        dots: true,
-        loop: true,
-    });
-
-    
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+            new bootstrap.Collapse(navCollapse, {
+                toggle: true
+            });
+            });
+        });
+            
 })(jQuery);
 

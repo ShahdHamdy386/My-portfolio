@@ -8,16 +8,12 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
@@ -34,35 +30,52 @@
     <!-- font awsome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
+    <style>
+        body { position: relative; }
+
+        .navbar .nav-link.active {
+            background-color: transparent !important;
+            color: var(--bs-primary) !important;
+        }
+
+        #contact {
+            min-height: 60vh;
+            padding-bottom: 120px;
+        }
+
+        .container-xxl { margin-bottom: 0; }
+    </style>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status"></div>
     </div>
     <!-- Spinner End -->
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light position-sticky top-0 shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light position-sticky top-0 shadow py-lg-0 px-4 px-lg-5 wow fadeIn fixed-top" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-block d-lg-none">
             <h1 class="text-primary fw-bold m-0">My portfolio</h1>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
             <a href="index.html" class="navbar-brand bg-white py-3 px-4 mx-3 d-none d-lg-block">
-                <h1 class="text-primary fw-bold m-0">My portfolio</h1>
+            <h1 class="text-primary fw-bold m-0">My portfolio</h1>
             </a>
+
             <div class="navbar-nav ms-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#services" class="nav-item nav-link">Services</a>
                 <a href="#skill" class="nav-item nav-link">Skills</a>
                 <a href="#project" class="nav-item nav-link">Projects</a>
+                <a href="#achievements" class="nav-item nav-link">Achievements</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
         </div>
@@ -78,7 +91,7 @@
                     <h3 class="text-primary mb-3">I'm</h3>
                     <h1 class="display-3 mb-3">Shahd Abd Ellah</h1>
                     <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer</div>
+                    <div class="typed-text d-none">Front End Developer</div>
                     <div class="d-flex align-items-center pt-5">
                         <a href="files/Shahd_Abdellah_Resume.pdf" download="Shahd-Resume.pdf" class="btn btn-primary py-3 px-4 me-5 download-resume">Download Resume</a>
                     </div>
@@ -97,7 +110,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-flex align-items-center mb-5">
-                        <h3 class="lh-base mb-0 text-primary">Aspiring Web Developer</h3>
+                        <h3 class="lh-base mb-0 text-primary">Front End Developer</h3>
                     </div>
                     <p class="mb-4">My journey into tech started back in high school as a STEM student, where I discovered my love for problem-solving and innovation.
                     Today, I’m pursuing a Computer Science Engineering degree at E-JUST, and alongside my studies, I’m enrolled in the DEPI Web Development track, learning how to turn creative ideas into functional, interactive websites using HTML, CSS, Bootstrap, and JavaScript.</p>
@@ -110,20 +123,20 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-3 mb-4">
                         <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/web devolopment1.jpg" alt="">
+                            <img class="img-fluid rounded"  src="img/web devolopment1.jpg" alt="web coding">
                         </div>
                         <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/web devolopment 2.jpg" alt="">
+                            <img class="img-fluid rounded" src="img/web devolopment 2.jpg" alt="web coding">
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-3">
                         <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">5</h2>
+                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">6</h2>
                     </div>
                     <p class="mb-4">Including HTML/CSS/JS designs, a JavaScript memory game, and this Bootstrap portfolio.</p>
                     <div class="d-flex align-items-center mb-3">
                         <h5 class="border-end pe-3 me-3 mb-0">Hours of Practice</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">100</h2><span class="text-primary fw-bold mb-0 fs-2">+</span>
+                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">120</h2><span class="text-primary fw-bold mb-0 fs-2">+</span>
                     </div>
                     <p class="mb-0">Dedicated to improving skills and building real projects.</p>
                 </div>
@@ -132,16 +145,89 @@
     </div>
     <!-- About End -->
 
+    <!-- services start -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Services</h2>
+
+            <div id="servicesCarousel" class="carousel slide col" data-bs-ride="carousel">
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active">
+                    <div class="card shadow-sm border-0 mx-auto" style="max-width: 500px;">
+                        <div class="card-body p-4">
+                        <div class="mb-3 text-primary fs-1">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h5 class="card-title">Responsive Web Development</h5>
+                        <p class="card-text">Websites that adapt seamlessly across desktops, tablets, and mobile devices.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item">
+                    <div class="card shadow-sm border-0 mx-auto" style="max-width: 500px;">
+                        <div class="card-body p-4">
+                        <div class="mb-3 text-primary fs-1">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h5 class="card-title">Custom Web Design</h5>
+                        <p class="card-text">Transforming Figma or Photoshop designs into pixel-perfect HTML, CSS, and Bootstrap code.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item">
+                    <div class="card shadow-sm border-0 mx-auto" style="max-width: 500px;">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-primary fs-1">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h5 class="card-title">Landing Pages Development</h5>
+                            <p class="card-text">High-converting, fast, and modern landing pages optimized for marketing campaigns.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card shadow-sm border-0 mx-auto" style="max-width: 500px;">
+                            <div class="card-body p-4">
+                                <div class="mb-3 text-primary fs-1">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <h5 class="card-title">Portfolio Websites</h5>
+                                <p class="card-text">Clean and professional personal websites to showcase skills, achievements, and projects.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon custom-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon custom-icon"></span>
+                </button>
+
+                <div class="carousel-indicators mt-4">
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services end -->
 
     <!-- Expertise Start -->
-    <div class="container-xxl py-6 pb-5" id="skill">
+    <div class="container-xxl py-6" id="skill">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h1 class="display-5 mb-5">Skills & Experience</h1>
-                    <p class="mb-4"> E-JUST Computer Science student and DEPI web trainee — building responsive sites with HTML, CSS, Bootstrap, and improving JavaScript through hands-on projects.</p>
+                    <p class="mb-4"> E-JUST Computer Science student and DEPI web trainee, building responsive sites with HTML, CSS, Bootstrap, and improving JavaScript through hands-on projects.</p>
                     <h3 class="mb-4">My Skills</h3>
-                    <div class="row align-items-center">
+                    <div class="col align-items-center">
                         <div class="col-md-6">
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
@@ -155,10 +241,10 @@
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="font-weight-bold">CSS</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
+                                    <h6 class="font-weight-bold">95%</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
@@ -193,54 +279,88 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
                         <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Experience</button>
+                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" data-bs-target="#tab-1">Experience</button>
                         </li>
                         <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Education</button>
+                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" data-bs-target="#tab-2">Education</button>
                         </li>
                     </ul>
                     <div class="tab-content">
                         <div id="tab-1" class="tab-pane fade show p-0 active">
                             <div class="col gy-5 gx-4">
-                                <div class="">
+                                <div>
+                                    <h5>Front-End Freelance Developer</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2025 – Present</p>
+                                    <h6 class="mb-0 fw-light">Independent Projects</h6>
+                                    <ul class="mt-2">
+                                        <li>Designed and developed responsive websites for small clients using HTML, CSS, JavaScript, and Bootstrap.</li>
+                                        <li>Translated client needs into functional layouts with clean UI/UX.</li>
+                                        <li>Improved project turnaround time by applying reusable components and templates.</li>
+                                    </ul>
+                                </div>
+                                <div class="mt-5">
                                     <h5>Web Development Trainee</h5>
                                     <hr class="text-primary my-2">
                                     <p class="text-primary mb-1">2025 – Present</p>
                                     <h6 class="mb-0 fw-light">Digital Egypt Pioneers Initiative (DEPI)</h6>
+                                    <ul class="mt-2">
+                                        <li>Completed training modules in front-end technologies including HTML, CSS, JavaScript, and Bootstrap.</li>
+                                        <li>Built hands-on projects such as a JavaScript memory game and portfolio website.</li>
+                                        <li>Collaborated with peers to improve problem-solving and debugging skills.</li>
+                                    </ul>
                                 </div>
                                 <div class="mt-5">
                                     <h5>Portfolio Projects</h5>
                                     <hr class="text-primary my-2">
                                     <p class="text-primary mb-1">2025</p>
-                                    <h6 class="mb-0 fw-light">Built responsive websites using HTML, CSS, JS and Bootstrap</h6>
+                                    <h6 class="mb-0 fw-light">Independent Work</h6>
+                                    <ul class="mt-2">
+                                        <li>Developed 5+ projects including responsive designs and interactive JavaScript applications.</li>
+                                        <li>Focused on clean, semantic code and cross-device responsiveness.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+
                         <div id="tab-2" class="tab-pane fade show p-0">
                             <div class="col gy-5 gx-4">
-                                <div class="">
+                                <div>
                                     <h5>B.Sc. in Computer Science Engineering</h5>
                                     <hr class="text-primary my-2">
                                     <p class="text-primary mb-1">2023 – 2028 (Expected)</p>
                                     <h6 class="mb-0 fw-light">E-JUST (Egypt-Japan University of Science & Technology)</h6>
+                                    <ul class="mt-2">
+                                        <li>Studying core subjects in software development, algorithms, and systems engineering.</li>
+                                        <li>Engaged in collaborative academic projects focused on problem-solving and innovation.</li>
+                                    </ul>
                                 </div>
                                 <div class="mt-5">
                                     <h5>STEM High School Graduate</h5>
                                     <hr class="text-primary my-2">
                                     <p class="text-primary mb-1">2020 - 2023</p>
                                     <h6 class="mb-0 fw-light">Science, Technology, Engineering, and Mathematics</h6>
+                                    <ul class="mt-2">
+                                        <li>Specialized in advanced mathematics, physics, and programming fundamentals.</li>
+                                        <li>Participated in team-based STEM projects that enhanced analytical and technical skills.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+
     <!-- Expertise End -->
+    
+    
     <!-- Projects Start -->
     <div class="container-xxl py-6 pt-5" id="project">
         <div class="container">
@@ -250,7 +370,7 @@
                 </div>
             </div>
             <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="col-lg-4 col-md-6 portfolio-item">
                     <div class="portfolio-img rounded overflow-hidden ratio ratio-1x1">
                         <img class="img-fluid" style="object-fit: cover;" src="img/screencapture-shahdhamdy386-github-io-The-Daily-Wizard-2025-09-09-18_36_34.png" alt="">
                         <div class="portfolio-btn">
@@ -263,7 +383,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                    <div class="portfolio-img rounded overflow-hidden ratio ratio-1x1">
+                        <img class="img-fluid" style="object-fit: cover;" src="img/screencapture-shahdhamdy386-github-io-coffee-shop-landing-page-2025-09-13-16_38_28.png" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/screencapture-shahdhamdy386-github-io-coffee-shop-landing-page-2025-09-13-16_38_28.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" 
+                            href="https://github.com/ShahdHamdy386/coffee-shop-landing-page" 
+                            target="_blank">
+                            <i class="fa fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item">
                     <div class="portfolio-img rounded overflow-hidden ratio ratio-1x1">
                         <img class="img-fluid" style="object-fit: cover;" src="img/screencapture-shahdhamdy386-github-io-Finder-Home-Page-2025-09-09-18_41_09.png" alt="">
                         <div class="portfolio-btn">
@@ -276,20 +409,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden ratio ratio-1x1">
-                        <img class="img-fluid" style="object-fit: cover;" src="img/screencapture-shahdhamdy386-github-io-Sign-in-UI-2025-09-09-18_45_46.png" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/screencapture-shahdhamdy386-github-io-Sign-in-UI-2025-09-09-18_45_46.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" 
-                            href="https://github.com/ShahdHamdy386/Sign-in-UI?tab=readme-ov-file" 
-                            target="_blank">
-                            <i class="fa fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
+                <div class="col-lg-4 col-md-6 portfolio-item">
                     <div class="portfolio-img rounded overflow-hidden ratio ratio-1x1">
                         <img class="img-fluid" style="object-fit: cover;" src="img/screencapture-shahdhamdy386-github-io-Memory-game-2025-09-09-18_47_38.png" alt="">
                         <div class="portfolio-btn">
@@ -302,13 +422,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="col-lg-4 col-md-6 portfolio-item">
                     <div class="portfolio-img rounded overflow-hidden ratio ratio-1x1">
-                        <img class="img-fluid" style="object-fit: cover;" src="img/screencapture-127-0-0-1-5500-index-html-2025-09-09-19_27_52.png" alt="">
+                        <img class="img-fluid" style="object-fit: cover;" src="img/screencapture-127-0-0-1-5500-index-html-2025-09-13-23_05_30.png" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/screencapture-127-0-0-1-5500-index-html-2025-09-09-19_27_52.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/screencapture-127-0-0-1-5500-index-html-2025-09-13-23_05_30.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" 
-                            href="https://github.com/ShahdHamdy386/My-portfolio" 
+                            href="https://github.com/ShahdHamdy386/My-portfolio?tab=readme-ov-file" 
+                            target="_blank">
+                            <i class="fa fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                    <div class="portfolio-img rounded overflow-hidden ratio ratio-1x1">
+                        <img class="img-fluid" style="object-fit: cover;" src="img/screencapture-shahdhamdy386-github-io-Sign-in-UI-2025-09-09-18_45_46.png" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/screencapture-shahdhamdy386-github-io-Sign-in-UI-2025-09-09-18_45_46.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" 
+                            href="https://github.com/ShahdHamdy386/Sign-in-UI?tab=readme-ov-file" 
                             target="_blank">
                             <i class="fa fa-link"></i>
                             </a>
@@ -319,18 +452,61 @@
         </div>
     </div>
     <!-- Projects End -->
+
+
+
+    <!-- achievements start -->
+    <section id="achievements" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 pt-5 pb-3 text-primary">Achievements</h2>
+            <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    
+                    <h5 class="card-title"><i class="fa-solid fa-circle-check text-primary me-2"></i> Completed Web Dev Track</h5>
+                    <p class="card-text">Successfully enrolled DEPI Web Development track, gaining strong skills in HTML, CSS, JS and Bootstrap.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fa-solid fa-address-card text-primary me-2"></i> Built My First Portfolio</h5>
+                    <p class="card-text">Launched my personal portfolio website to showcase my projects and skills.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fa-solid fa-certificate text-primary me-2"></i> Web Development Certificate</h5>
+                    <p class="card-text">Issued by IBM SkillsBuild – 2025</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- achievements end -->
+
+
     <!-- Contact Start -->
     <div class="container-xxl pb-5" id="contact">
         <div class="container py-5">
             <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
                     <h1 class="display-5 mb-0">Let's Work Together</h1>
+                    <p class="mb-4 mt-2 text-muted">
+                        Whether you have a new idea or need help improving your existing project, 
+                        I’d love to collaborate and bring your vision to life.
+                    </p>
                 </div>
             </div>
             <div class="row g-5">
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="mb-2">Location:</p>
-                    <h3 class="fw-bold">Saieed Street, Al Gharbiyah, Egypt</h3>
+                    <h3 class="fw-bold">Al Gharbiyah, Egypt</h3>
                     <hr class="w-100">
                     <p class="mb-2">Call me:</p>
                     <h3 class="fw-bold">+20 128 727 3759</h3>
@@ -346,7 +522,7 @@
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <form id="contact-form">
-                        <div id="form-status"></div> <!-- For success/error messages -->
+                        <div id="form-status"></div> 
                         <div class="row g-3">
                             <div class="col-md-6">
                             <div class="form-floating">
@@ -386,31 +562,21 @@
     <!-- Contact End -->
 
 
-    <!-- Map Start -->
-    <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container-xxl pt-5 px-0">
-            <div class="bg-dark">
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d438363.6975521147!2d30.69936493391391!3d30.86661452394021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7b653787fdc13%3A0x4eba4ab705c709dd!2sGharbia%20Governorate!5e0!3m2!1sen!2seg!4v1757433949621!5m2!1sen!2seg"
-                frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-            </div>
-        </div>
-    </div>
-    <!-- Map End -->
-
-
     <!-- Copyright Start -->
-    <div class="container-fluid bg-dark text-white py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom text-secondary" href="#">My portfolio</a>, All Right Reserved.
-                    </div>
-                </div>
-            </div>
+    <section id="thank-you" class="pt-5 text-center bg-primary text-white">
+        <div class="container">
+            <h2 class="mb-3" style="color: white !important;">Thank You!</h2>
+            <p class="lead mb-4">
+                Thanks for visiting my portfolio. I truly appreciate your time and interest in my work.  
+                Let’s connect and create something amazing together!
+            </p>
+            <a href="#contact" class="btn btn-light px-4">Get in Touch</a>
+        </div>    
+        <div class="container-fluid text-left pt-5 pb-3 px-5">
+                &copy; <a class=" text-secondary" href="#">My portfolio</a>, All Right Reserved.    
         </div>
-    </div>
+    </section>
+
     <!-- Copyright End -->
 
 
@@ -467,6 +633,64 @@
             sendBtn.disabled = false;
         });
     });
+    </script>
+    <script>
+    (function() {
+        const offset = 80; 
+        const navLinks = Array.from(document.querySelectorAll('.navbar-nav a.nav-link'));
+        const sections = navLinks
+        .map(a => {
+            const href = a.getAttribute('href');
+            if (!href || !href.startsWith('#')) return null;
+            return document.querySelector(href);
+        })
+        .filter(Boolean);
+
+        function updateActiveOnScroll() {
+        const scrollPos = window.scrollY;
+        let currentSection = null;
+
+        for (let i = 0; i < sections.length; i++) {
+            const sec = sections[i];
+            const top = sec.getBoundingClientRect().top + window.scrollY - offset;
+            if (scrollPos >= top) {
+            currentSection = sec;
+            }
+        }
+
+
+        if (!currentSection) {
+            navLinks.forEach(l => l.classList.remove('active'));
+            const home = document.querySelector('.navbar-nav a[href="#home"]');
+            if (home) home.classList.add('active');
+            return;
+        }
+
+
+        const id = currentSection.id;
+        navLinks.forEach(l => {
+            if (l.getAttribute('href') === `#${id}`) {
+            l.classList.add('active');
+            } else {
+            l.classList.remove('active');
+            }
+        });
+        }
+
+
+        window.addEventListener('scroll', updateActiveOnScroll, { passive: true });
+        window.addEventListener('resize', () => setTimeout(updateActiveOnScroll, 150));
+        window.addEventListener('load', () => setTimeout(updateActiveOnScroll, 100));
+
+
+        navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            setTimeout(updateActiveOnScroll, 100);
+        });
+        });
+
+        updateActiveOnScroll();
+    })();
     </script>
 
 </body>

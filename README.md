@@ -12,7 +12,6 @@ This site is fully responsive and optimized for all devices.
 - ✅ **Projects Showcase** – Links to live demos
 - ✅ **Downloadable Resume** – One-click resume download
 - ✅ **Contact Form** – Integrated with EmailJS for direct messaging
-- ✅ **Google Maps Embed** – Displays location
 
 ---
 
@@ -36,20 +35,16 @@ This site is fully responsive and optimized for all devices.
 - **The Daily Wizard** → [View on GitHub](https://github.com/ShahdHamdy386/The-Daily-Wizard)
 - **Sign-in UI** → [View on GitHub](https://github.com/ShahdHamdy386/Sign-in-UI)
 - **Memory Game** → [View on GitHub](https://github.com/ShahdHamdy386/Memory-game)
+- **Coffee shop landing page** → [View on GitHub](https://github.com/ShahdHamdy386/coffee-shop-landing-page)
 - **This Portfolio** → [View on GitHub](https://github.com/ShahdHamdy386/Portfolio)
 
 ---
 
 ## 📧 Contact
 - **Name:** Shahd Abd Ellah
-- **Email:** shahdabdellah05@example.com  
+- **Email:** shahdabdellah05@gmail.com  
 
 ---
-
-## ✅ How to Use
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/portfolio.git
 
 ## 📝 License & Attribution
 This portfolio was built using a free Bootstrap 5 template from ThemeWagon, customized for personal use.
