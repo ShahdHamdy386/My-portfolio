@@ -88,16 +88,16 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
 
-        const navLinks = document.querySelectorAll('.nav-link');
-        const navCollapse = document.querySelector('.navbar-collapse');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link'); // ركزي هنا
+    const navCollapse = document.querySelector('.navbar-collapse');
 
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
             new bootstrap.Collapse(navCollapse, {
                 toggle: true
             });
-            });
         });
+    });
             
 })(jQuery);
 

@@ -118,7 +118,12 @@
 }
 
 /* Header */
-#home { margin-bottom: 6rem; background: url(../img/color\ splash.jpg) left top no-repeat; }
+#home { 
+  margin-bottom: 6rem; 
+  background: url(../img/color\ splash.jpg) left top no-repeat;
+  position: relative;
+  overflow: hidden; 
+}
 
 
 /* Skills */
